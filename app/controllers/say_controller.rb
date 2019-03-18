@@ -11,6 +11,13 @@ class SayController < ApplicationController
       @files = Dir.glob('*')
   end
 
+  def filesearch
+    query = params[:query]
+    files = Dir.glob('*').select {|s| s.include? "#{query}"}
+
+    render json: files
+  end
+
   private
 
   def time_now
