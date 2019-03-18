@@ -1,12 +1,18 @@
-<h1>Hello from Rails!</h1>
-<p>
-    It is now <%= @time %>
-</p>
-<p>
-    Time to say
-    <%= link_to "Goodbye", say_goodbye_path %>
-</p>
-<p>
-    List of
-    <%= link_to "files", say_filenames_path %>
-</p>
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        It is now <%=@time%>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Hello World from Carson Davis</h5>
+         <p>
+                List of 
+                <%=link_to "File Names", say_filenames_path %>!
+         </p>
+         <p>
+                Time to say 
+                <%=link_to "Goodbye", say_goodbye_path %>!
+         </p>
+      </div>
+    </div>
+</div>

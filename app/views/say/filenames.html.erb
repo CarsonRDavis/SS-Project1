@@ -1,6 +1,14 @@
-<h1>List of files in Directory</h1>
-<ul>
-    <% @files.each do |file| %>
-        <li><%= file %>
-    <% end %>
-</ul>
+<div class="container">
+    <div class="card">
+      <div class="card-body">
+         <p>
+                Say <%= link_to "Hello", say_hello_path %> again.
+         </p>
+         <ul>
+            <% @files.each do |file| %>
+                <li><%= file %>
+            <% end %>
+         </ul>
+      </div>
+    </div>
+</div>
